@@ -1,0 +1,18 @@
+<h1>{{ title }}</h1>
+
+<div id="agmMap">
+  <agm-map [zoom]="zoom" [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    <agm-marker *ngFor="let marker of markers"
+                [latitude]="marker.lat"
+                [longitude]="marker.lng"
+                [iconUrl]="{'url': 'https://icons.iconarchive.com/icons/icons-land/vista-map-markers/256/Map-Marker-Marker-Inside-Azure-icon.png','scaledSize': {'height': 50, 'width': 50}}"></agm-marker>
+  </agm-map>
+</div>
+
+<div class="container">
+  <h2>Google Places Autocomplete</h2>
+  <input ngx-google-places-autocomplete [options]=
+    'options'  (onAddressChange)="AddressChange($event)"/>
+  {{ formattedaddress }}
+</div>
