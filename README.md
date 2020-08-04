@@ -6,22 +6,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Steps for testing
+
+1. Put your google api key in the files: "app.module.ts" and "index.html" by replacing the following text "Your api key" in them.
+  - The path for file "index.html" is "./angular-google-map/index.html"
+  - The path for file "app.module.ts" is "./angular-google-map/src/app/app.module.ts"
+  
+2. Put your BE server domain in the file "markers.service.ts". THe path for file is "./angular-google-map/src/app/markers.service.ts".
+3. Run your BE server.
+4. Run Angular server with the command: "ng serve" with the console, as you must to be in the directory "/angular-google-map".
