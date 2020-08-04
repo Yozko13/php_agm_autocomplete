@@ -21,7 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
-      apiKey: 'Your app key',
+      apiKey: 'You app key',
       libraries: ['places']
     }),
     GooglePlaceModule,
